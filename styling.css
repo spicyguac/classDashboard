@@ -78,3 +78,37 @@ body {
     color: white;
 }
 
+#contentsMenu {
+    grid-template-columns: 2fr .75fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+#contentsMenu > * {
+    display: grid;
+}
+
+.listedClass {
+    display: grid;
+    border-left: 6px solid #0353a4;
+    border-radius: 10px;
+    background-color: white;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-rows: 50px .5fr;
+}
+
+.classTitle {
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.classDescription {
+    font-size: .75rem;
+    color: gray;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
