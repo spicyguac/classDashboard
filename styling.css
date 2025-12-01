@@ -129,6 +129,6 @@ body {
 }
 
 #announcements {
-    grid-template-rows: 1rem .75fr;
     gap: 15px;
+    grid-template-rows: 1rem .75fr;
 }
