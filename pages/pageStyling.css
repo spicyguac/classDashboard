@@ -79,3 +79,39 @@ body {
 #dashboardLink {
     color: white;
 }
+
+#contents {
+    grid-template-columns: 2fr .75fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+#contents > * {
+    display: grid;
+}
+
+#weekList {
+    gap: 15px;
+    padding: 20px;
+    grid-template-rows: repeat(auto-fit, minmax(50px, .2fr));
+}
+
+.weekOfClass {
+    display: grid;
+    border-left: 6px solid #0c57b3;
+    border-radius: 10px;
+    background-color: white;
+    grid-template-rows: .5fr .75fr;
+    gap: 15px;
+}
+
+.weekTitle, .weekContents {
+    padding-left: 15px;
+}
+
+.weekTitle {
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
