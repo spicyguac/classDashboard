@@ -146,10 +146,15 @@ body {
 .announcementPiece {
     display: grid;
     grid-template-rows: .125fr 1fr;
+    border-left: 5px solid red;
+    border-radius: 10px;
+    padding-left: 5px;
 }
 
 .announcementTitle {
     font-size: 1rem;
     padding: 0;
 }
+
+
 
