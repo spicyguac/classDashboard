@@ -17,35 +17,35 @@
 
                 </div>
             </div>
-            <div id="instructions">
-                Welcome, click on your class down below to see a
-                week by week timeline of what we have done in class.
-                Please let Bruno know if the links don't work or if the
-                content is not visible. Thank you for attending my
-                classes and for trying out this webiste.
+            <div id="sideMenu">
+                <div id="navigationMenu">
+                    <div class="menuNavItem"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>list-box-outline</title><path d="M11 15H17V17H11V15M9 7H7V9H9V7M11 13H17V11H11V13M11 9H17V7H11V9M9 11H7V13H9V11M21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H19C20.1 3 21 3.9 21 5M19 5H5V19H19V5M9 15H7V17H9V15Z" /></svg>
+                        About</div>
+                    
+                    <div class="menuNavItem"><svg id="dashboardIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-account</title><path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A2.25,2.25 0 0,1 14.25,11A2.25,2.25 0 0,1 12,13.25A2.25,2.25 0 0,1 9.75,11A2.25,2.25 0 0,1 12,8.75M12,15C13.5,15 16.5,15.75 16.5,17.25V18H7.5V17.25C7.5,15.75 10.5,15 12,15Z" /></svg>
+                        <a class="menuNavItem" id="dashboardLink" href="./index.html">Home</a>
+                    </div>
+                    
+                    <div class="menuNavItem"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message</title><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" /></svg>
+                        Announcements</div>
+                </div>
             </div>
         </div>
-        <div id="sideMenu">
-            <div id="backToDashboard">
-                <svg id="dashboardIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard-outline</title><path d="M19,5V7H15V5H19M9,5V11H5V5H9M19,13V19H15V13H19M9,17V19H5V17H9M21,3H13V9H21V3M11,3H3V13H11V3M21,11H13V21H21V11M11,15H3V21H11V15Z" /></svg>
-                <a id="dashboardLink" href="./index.html">Dashboard</a>
+         <div id="instructions">
+                <p id="tempInstructions">
+                    Welcome, click on your class down below to see a
+                    week by week timeline of what we have done in class.
+                    Please let Bruno know if the links don't work or if the
+                    content is not visible. Thank you for attending my
+                    classes and for trying out this webiste.
+                </p>
             </div>
-            <div id="navigationMenu">
-                <div class="menuNavItem"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message</title><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" /></svg>
-                    Announcements</div>
-                <div class="menuNavItem"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>list-box-outline</title><path d="M11 15H17V17H11V15M9 7H7V9H9V7M11 13H17V11H11V13M11 9H17V7H11V9M9 11H7V13H9V11M21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H19C20.1 3 21 3.9 21 5M19 5H5V19H19V5M9 15H7V17H9V15Z" /></svg>
-                    About</div>
-            </div>
-        </div>
+        
         <div id="contentsMenu">
             <div id="weekCalendar">
                 <div id="englishClassList">
-                    <div id="englishClassListTitle">English Class List</div>
+                    <div class="sectionTitle" id="englishClassListTitle">English Class List</div>
                     <div id="listedClasses">
-                        <div class="dayOfTheWeek">
-                            <div class="dayTitle">Sunday</div>
-                            
-                        </div>
                         <div class="dayOfTheWeek">
                             <div class="dayTitle">Monday</div>
                             <div class="location">
@@ -105,31 +105,69 @@
                     </div>
                 </div>
                 <div id="computerClassList">
-                    <div id="computerClassListTitle">Computer Class List</div>
-                    <div class="listedClass">
-                        <div class="classTitle"><a href="./pages/mC930B.html">Monday & Thrusday Morning Beginner Computer</a></div>
-                        <p class="classDescription">
-                            Class is for individuals to learn basic computer skills.
-                        </p>
-                    </div>
-                    <div class="listedClass">
-                        <div class="classTitle"><a href="./pages/twIT9.html">Tuesday & Wednesday Morning Web Dev</a></div>
-                        <p class="classDescription">
-                            Class is for individuals interested in learning how to start building you own websites.
-                            Will start from the very beginning and will explain any and all concepts.
-                        </p>
-                    </div>
-                    <div class="listedClass">
-                        <div class="classTitle"><a href="./pages/tC6pmB.html">Tuesday Afternoon High Beginner Computer</a></div>
-                        <p class="classDescription">
-                            Class is for individuals who want to learn more complex uses of the computer such as 
-                            google docs and
-                        </p>
+                    <div class="sectionTitle" id="computerClassListTitle">Computer Class List</div>
+                    <div id="listedClasses">
+                        <div class="dayOfTheWeek">
+                            <div class="dayTitle">Monday</div>
+                            <div class="location">
+                                <a href="./locationDashboards/lincolnHigh/siteDashboard.html">Lincoln High School</a>
+                            </div>
+                            <div class="location">
+                                <a>Lincoln Literacy Office</a>
+                            </div>
+                            <div class="location">
+                                <a>Grace Lutheran Church</a>
+                            </div>
+                        </div>
+                        <div class="dayOfTheWeek">
+                            <div class="dayTitle">Tuesday</div>
+                            <div class="location">
+                                <a>Lincoln High School</a>
+                            </div>
+                            <div class="location">
+                                <a>Lincoln Literacy Office</a>
+                            </div>
+                            <div class="location">
+                                <a>Grace Lutheran Church</a>
+                            </div>
+                        </div>
+                        <div class="dayOfTheWeek">
+                            <div class="dayTitle">Wednesday</div>
+                            <div class="location">
+                                <a>Lincoln High School</a>
+                            </div>
+                            <div class="location">
+                                <a>Lincoln Literacy Office</a>
+                            </div>
+                            <div class="location">
+                                <a>Grace Lutheran Church</a>
+                            </div>
+                        </div>
+                        <div class="dayOfTheWeek">
+                            <div class="dayTitle">Thursday</div>
+                            <div class="location">
+                                <a>Lincoln High School</a>
+                            </div>
+                            <div class="location">
+                                <a>Lincoln Literacy Office</a>
+                            </div>
+                            <div class="location">
+                                <a>Grace Lutheran Church</a>
+                            </div>
+                        </div>
+                        <div class="dayOfTheWeek">
+                            <div class="dayTitle">Friday</div>
+                            
+                        </div>
+                        <div class="dayOfTheWeek">
+                            <div class="dayTitle">Saturday</div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="announcements">
-                <div id="announcementsTitle">Announcements</div>
+                <div class="sectionTitle" id="announcementsTitle">Announcements</div>
                 <div id="announcementList">
                     <div class="announcementPiece">
                         <div class="announcementTitle">Semester Ending</div>
