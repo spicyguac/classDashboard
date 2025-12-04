@@ -7,6 +7,9 @@
     --green: rgba(186,255,201);
     --orange: rgba(255,223,186);
     --yellow: rgba(255,255,186);
+    --weekPadding: min(5em, 8%);
+    --contentsPadding: min(2em, 8%);
+    --gap15: min(1.5em, 8%)
 }
 
 * {
@@ -29,6 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     background: var(--blue);
+    width: 100%;
     padding: 0;
     margin: 0;
 }
@@ -59,12 +63,12 @@ body {
 }
 
 .siteHeaderPiece#title {
-    font-size: 3rem; 
+    font-size: clamp(1.5rem, 10vw, 5rem); 
 }
 
 #sideMenu {
     display: flex;
-    gap: 15px;
+    gap: var(--gap15);
     
     font-family: "Oswald", sans-serif;
     font-weight: bold;
@@ -79,7 +83,7 @@ body {
 }
 
 .icon {
-    width: 1.25rem;
+    width: min(1em,8%);
     fill: white;
     height: auto;
     padding-right: .125rem;
@@ -95,7 +99,7 @@ body {
 .menuNavItem {
     display: flex;
     font-size: 1rem;
-    padding: .5rem;
+    padding: min(1em, 8%);
 }
 
 #dashboardLink {
@@ -109,23 +113,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: min(2em, 8%);
+    padding-right: min(2em, 8%);
 }
 
 #tempInstructions {
     /* border: 2px solid red; */
     border-radius: 10px;
     background: var(--yellow);
-    padding: 10px;
+    padding: min(3em, 8%);
 }
 
 
 
 #contentsMenu {
     grid-template-columns: 2fr .75fr;
-    gap: 15px;
-    grid-column: 1/3;
+    gap: var(--gap15);
 }
 
 #contentsMenu > * {
@@ -134,8 +137,10 @@ body {
 
 #weekCalendar {
     grid-template-rows: 2fr 2fr;
-    gap: 15px;
-    padding: 20px;
+    gap: var(--gap15);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: var(--contentsPadding);
 }
 
 #listedClasses {
@@ -148,7 +153,7 @@ body {
 #englishClassList, #computerClassList, #announcementsTitle {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: var(--gap15);
     
 }
 
@@ -165,9 +170,9 @@ body {
     display: flex;
     flex-direction: column;
     /* border: 2px solid red; */
-    gap: 10px;
+    gap: min(1em, 8%);
     border-radius: 10px;
-    padding: 10px;
+    padding: var(--weekPadding);
 }
 
 /* #englishClassListTitle {
@@ -194,26 +199,11 @@ body {
     border-radius: 10px;
 }
 
-.classTitle {
-    font-size: 1rem;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.classDescription {
-    font-size: .75rem;
-    color: gray;
-    padding: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0;
-}
-
 #announcements {
-    gap: 15px;
+    gap: var(--gap15);
     grid-template-rows: 1rem .1fr;
-    padding: 20px;
+    padding: var(--contentsPadding);
+    grid-column: 2/3;
 }
 
 #announcementList {
@@ -243,6 +233,13 @@ body {
 /* #announcementsTitle {
     color: rgba(255,237,72);
 } */
+
+@media (max-width: 600px) {
+    #contentsMenu {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
