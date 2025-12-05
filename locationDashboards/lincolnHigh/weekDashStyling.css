@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --red: rgba(255,179,186);
-    --blue: rgba(186,225,255);
-    --green: rgba(186,255,201);
-    --orange: rgba(255,223,186);
-    --yellow: rgba(255,255,186);
+    --red: rgba(255,102,102);
+    --blue: rgba(255,133,133);
+    --green: rgba(255,163,163);
+    --orange: rgba(255,194,194);
+    --yellow: rgba(255,225,225);
 }
 
 * {
@@ -22,13 +22,14 @@ body {
     padding: 0;
     margin: 0;
     justify-content: center;
-    background: var(--blue);
+    background: var(--orange);
 }
 
 #baseDiv {
     display: flex;
     flex-direction: column;
-    background: var(--blue);
+    background: var(--orange);
+    width: 100%;
     padding: 0;
     margin: 0;
 }
@@ -38,7 +39,7 @@ body {
 }
 
 #header, #sideMenu {
-    background-color: rgba(59,160,224);
+    background-color: var(--red);
     border-radius: 10px;
 }
 
@@ -130,7 +131,7 @@ body {
 }
 
 .weekPiece {
-    background: var(--orange);
+    background: var(--green);
     border-radius: 10px;
     padding: 10px;
 }
@@ -164,7 +165,7 @@ body {
     flex-direction: column;
     gap: 30px;
     /*background-color: white;*/
-    background: var(--red);
+    background: var(--blue);
     border-radius: 10px;
     padding: 10px;
 }
