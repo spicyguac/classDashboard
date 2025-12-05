@@ -18,6 +18,7 @@
 
 a {
     text-decoration: none;
+    text-align: center;
 }
 
 body {
@@ -63,6 +64,7 @@ body {
 }
 
 .siteHeaderPiece#title {
+    text-align: center;
     font-size: clamp(1.5rem, 10vw, 5rem); 
 }
 
@@ -79,7 +81,6 @@ body {
 #navigationMenu {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
 }
 
 .icon {
@@ -98,13 +99,14 @@ body {
 
 .menuNavItem {
     display: flex;
-    font-size: 1rem;
-    padding: min(1em, 8%);
+    justify-content: center;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    padding: min(1em, 2%);
 }
 
 #dashboardLink {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     padding-left: 0;
 
 }
@@ -121,7 +123,7 @@ body {
     /* border: 2px solid red; */
     border-radius: 10px;
     background: var(--yellow);
-    padding: min(3em, 8%);
+    padding: min(1em, 8%);
 }
 
 
@@ -146,11 +148,11 @@ body {
 #listedClasses {
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    gap: 5px;
+    gap: min(.5em,8%);
     /* grid-auto-flow: column; */
 }
 
-#englishClassList, #computerClassList, #announcementsTitle {
+#englishClassList,#computerClassList, #announcementsTitle {
     display: flex;
     flex-direction: column;
     gap: var(--gap15);
@@ -175,14 +177,6 @@ body {
     padding: var(--weekPadding);
 }
 
-/* #englishClassListTitle {
-    color: var(--red);
-}
-
-#computerClassListTitle {
-    color: rgba(37,86,217);
-} */
-
 #englishClassList > #listedClasses > .dayOfTheWeek {
     background: var(--orange);
 }
@@ -195,8 +189,13 @@ body {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    /* border: 2px solid white; */
     border-radius: 10px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #announcements {
@@ -209,11 +208,11 @@ body {
 #announcementList {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: min(2.5em, 10%);
     /*background-color: white;*/
     background: var(--red);
     border-radius: 10px;
-    padding: 10px;
+    padding: min(1em,8%);
 }
 
 .announcementPiece {
@@ -238,6 +237,17 @@ body {
     #contentsMenu {
         display: flex;
         flex-direction: column;
+    }
+
+    #listedClasses {
+        display: flex;
+        flex-direction: column;
+        gap: min(.5em,8%);
+    /* grid-auto-flow: column; */
+    }
+
+    .icon, #dashboardIcon {
+        width: 0;
     }
 }
 
