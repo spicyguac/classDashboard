@@ -184,5 +184,9 @@ body {
     font-weight: bold;
 }
 
-
-
+@media (max-width: 600px){
+    #contentsMenu {
+        display: flex;
+        flex-direction: column;
+    }
+}

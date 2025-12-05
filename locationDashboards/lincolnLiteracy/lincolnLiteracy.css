@@ -118,6 +118,8 @@ body {
 }
 
 #weeksList {
+    grid-column: 1/2;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -184,5 +186,10 @@ body {
     font-weight: bold;
 }
 
-
+@media (max-width: 600px){
+    #contentsMenu {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
