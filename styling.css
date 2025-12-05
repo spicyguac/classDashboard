@@ -100,12 +100,23 @@ body {
 .menuNavItem {
     display: flex;
     justify-content: center;
-    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-size: clamp(.25rem, 4vw, 1.5rem);
     padding: min(1em, 2%);
 }
 
-#dashboardLink {
+.menuHome {
+    display: flex;
+    padding: min(1em, 2%);
+}
+
+.dashboardLink {
     color: white;
+
+}
+
+#homeLink {
+    color: white;
+    text-align: center;
     font-size: clamp(1.5rem, 4vw, 2rem);
     padding-left: 0;
 
@@ -242,12 +253,16 @@ body {
     #listedClasses {
         display: flex;
         flex-direction: column;
-        gap: min(.5em,8%);
+        gap: min(.5em,15%);
     /* grid-auto-flow: column; */
     }
 
     .icon, #dashboardIcon {
         width: 0;
+    }
+
+    .menuHome {
+        padding: 0;
     }
 }
 

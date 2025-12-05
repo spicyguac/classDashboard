@@ -60,7 +60,8 @@ body {
 }
 
 .siteHeaderPiece#title {
-    font-size: 3rem; 
+    text-align: center;
+    font-size: clamp(1.5rem, 10vw, 5rem); 
 }
 
 #sideMenu {
@@ -99,7 +100,11 @@ body {
     padding: .5rem;
 }
 
-#dashboardLink {
+.dashboardLink {
+    color: white;
+}
+
+#homeLink {
     color: white;
     font-size: 2rem;
     padding-left: 0;
