@@ -3,13 +3,13 @@
 
 :root {
     --red: rgba(255,179,186);
-    --blue: rgba(186,225,255);
-    --green: rgba(186,255,201);
-    --orange: rgba(255,223,186);
+    --blue: #769FCD;
+    --green: #B9D7EA;
+    --orange: #D6E6F2;
     --yellow: rgba(255,255,186);
     --weekPadding: min(5em, 8%);
     --contentsPadding: min(2em, 8%);
-    --gap15: min(1.5em, 8%)
+    --gap15: min(2em, 20%)
 }
 
 * {
@@ -62,6 +62,7 @@ body {
 
 #outerSearchArea {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -74,9 +75,28 @@ body {
     
 }
 
+#searchClass {
+    font-size: 1rem;
+}
+
+/* #classCode {
+    background-color: var(--orange);
+} */
+
+.sectionTitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+#instructions {
+    font-size: 1.25rem;
+}
+
+#announcementsTitle {
+    font-size: 2rem;
+}
 
 #announcements {
-
     gap: var(--gap15);
     grid-template-rows: 1rem .1fr;
     padding: var(--contentsPadding);
@@ -87,8 +107,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: min(2.5em, 10%);
-    /*background-color: white;*/
-    background: var(--red);
+    background: var(--green);
     border-radius: 10px;
     padding: min(1em,8%);
 }
@@ -96,7 +115,6 @@ body {
 .announcementPiece {
     display: grid;
     grid-template-rows: .125fr 1fr;
-    /* border: 2px solid white; */
     border-radius: 10px;
     
 }
