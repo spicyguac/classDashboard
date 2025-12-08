@@ -4,7 +4,7 @@ const aSkillsClasses = new Map();
 const lincolnClasses = new Map();
 const mondayClasses = new Map();
 
-mondayClasses.set('A', './about/about.html');
+mondayClasses.set('C', './aSkills/lincoln/monday/weeklyDashboard.html');
 lincolnClasses.set('M', mondayClasses);
 aSkillsClasses.set('L', lincolnClasses);
 

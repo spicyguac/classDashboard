@@ -3,8 +3,8 @@
 
 :root {
     --red: rgba(255,179,186);
-    --blue: #769FCD;
-    --green: #B9D7EA;
+    --blue: #e3f2fd;
+    --green: #bbdefb;
     --orange: #D6E6F2;
     --yellow: rgba(255,255,186);
     --weekPadding: min(5em, 8%);
@@ -20,12 +20,21 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
-    padding-top: 10rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     justify-content: center;
     /* Maybe fill background or sides with pictures of me in classes */
     background: white;
+    /* min-height: 35vh; */
+}
+
+body {
+    background-image: url(./images/cnaPrep.jpg), url(./images/computerSu.jpg), url(./images/drivingSim.jpg), url(./images/zoo.jpg), url(./images/libraryTyping.jpg), url(./images/morrilHall.jpg), url(./images/bryanHealth.jpg), url(./images/willard.jpg), url(./images/citizens.jpg), url(./images/startran.jpg), url(./images/abby.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%, 0% 100%, 0% 0%,0% 50%, 100% 0%, 100% 50%, 33% 0%, 67% 0%, 33% 100%, 70% 100%, 51% 100%;
+    background-size: 25%, 30%, 25%, 22%, 25%, 22%, 25%, 27%, 20%, 20%, 13%;
 }
 
 #outer {
