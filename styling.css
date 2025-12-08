@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --red: rgba(255,179,186);
-    --blue: #e3f2fd;
-    --green: #bbdefb;
+    --red: #0d47a1;
+    --blue: #fdf6f2;
+    --green: #c0d8e3;
     --orange: #D6E6F2;
     --yellow: rgba(255,255,186);
     --weekPadding: min(5em, 8%);
