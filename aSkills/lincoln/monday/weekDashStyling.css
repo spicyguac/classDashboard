@@ -23,11 +23,10 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
     justify-content: center;
-    /* Maybe fill background or sides with pictures of me in classes */
     background: var(--red);
 }
 
@@ -156,14 +155,24 @@ body {
     font-weight: bold;
 }
 
-@media (max-width: 600px){
-    #contentsMenu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .menuHome {
-        padding: 0;
-    }
+#helpBar {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    font-size: var(--textSize);
+    font-weight: bold;
+    border-radius: 10px;
 }
 
+.helpBarItem {
+    padding: 10px;
+}
+
+.helpBarItem > a {
+    text-decoration: none;
+    color: black;
+}
