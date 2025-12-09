@@ -9,7 +9,7 @@
     --yellow: rgba(255,255,186);
     --weekPadding: min(5em, 8%);
     --contentsPadding: min(2em, 8%);
-    --gap15: min(2em, 20%)
+    --gap15: min(2em, 2%)
 }
 
 * {
@@ -63,6 +63,7 @@ body {
 #contentsMenu {
     display: grid;
     grid-template-columns: .75fr 1fr;
+    gap: max(.5rem, 3%);
 }
 
 #contentsMenu > * {
@@ -107,7 +108,7 @@ body {
 
 #announcements {
     gap: var(--gap15);
-    grid-template-rows: .25fr 1fr;
+    grid-template-rows: .125fr 1fr;
     padding: var(--contentsPadding);
     padding-left: 0;
     padding-right: 0;

@@ -2,15 +2,26 @@ const searchClassButton = document.getElementById("searchClass");
 const userInput = document.getElementById("classCode");
 const aSkillsClasses = new Map();
 const lincolnClasses = new Map();
-const mondayClasses = new Map();
+const lMonday = new Map();
+const lTuesday = new Map();
 
-mondayClasses.set('C', './aSkills/lincoln/monday/weeklyDashboard.html');
-lincolnClasses.set('M', mondayClasses);
+lMonday.set('C', './aSkills/lincoln/monday/weeklyDashboard.html');
+
+
+lTuesday.set("9", './aSkills/lincoln/tuesday/weeklyDashboard9W.html');
+
+
+lTuesday.set("6", './aSkills/lincoln/tuesday/weeklyDashboard6C.html');
+
+lincolnClasses.set('M', lMonday);
+lincolnClasses.set('T', lTuesday);
+
 aSkillsClasses.set('L', lincolnClasses);
 
 
 
 document.addEventListener("DOMContentLoaded", function() {
+    // console.log(lTuesday.get('9W'))
     searchClass();
 })
 
@@ -32,6 +43,7 @@ function searchClass() {
                     locationOfClass = aSkillsClasses.get(codeArray[1])
                     dayOfClass = locationOfClass.get(codeArray[2]);
                     typeOfClass = dayOfClass.get(codeArray[3]);
+                    //console.log(typeof codeArray[3]);
                     window.location.href = typeOfClass;
                 } catch (error) {
                     console.log(error)
