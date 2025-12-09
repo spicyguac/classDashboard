@@ -107,7 +107,7 @@ body {
 
 #announcements {
     gap: var(--gap15);
-    grid-template-rows: 1rem .1fr;
+    grid-template-rows: .25fr 1fr;
     padding: var(--contentsPadding);
     padding-left: 0;
     padding-right: 0;
@@ -117,7 +117,7 @@ body {
 #announcementList {
     display: flex;
     flex-direction: column;
-    gap: min(2.5em, 10%);
+    gap: min(2.5em, 5%);
     background: var(--green);
     border-radius: 10px;
     padding: min(1em,8%);
