@@ -20,10 +20,7 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
-    padding-top: 13rem;
-    padding-bottom: 13rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    /* position: relative; */
     justify-content: center;
     /* Maybe fill background or sides with pictures of me in classes */
     background: white;
@@ -31,10 +28,10 @@ body {
 }
 
 body {
-    background-image: url(./images/cnaPrep.jpg), url(./images/computerSu.jpg), url(./images/drivingSim.jpg), url(./images/zoo.jpg), url(./images/libraryTyping.jpg), url(./images/morrilHall.jpg), url(./images/bryanHealth.jpg), url(./images/willard.jpg), url(./images/citizens.jpg), url(./images/startran.jpg), url(./images/abby.jpg);
+    background-image: url(./images/cnaPrep.jpg), url(./images/computerSu.jpg), url(./images/drivingSim.jpg), url(./images/libraryTyping.jpg), url(./images/bryanHealth.jpg), url(./images/willard.jpg), url(./images/abby.jpg) ,url(./images/citizens.jpg), url(./images/startran.jpg), url(./images/zoo.jpg), url(./images/morrilHall.jpg);
     background-repeat: no-repeat;
-    background-position: 100% 100%, 0% 100%, 0% 0%,0% 50%, 100% 0%, 100% 50%, 33% 0%, 67% 0%, 33% 100%, 70% 100%, 51% 100%;
-    background-size: 25%, 30%, 25%, 22%, 25%, 22%, 25%, 27%, 20%, 20%, 13%;
+    background-position: 100% 100%, 0% 100%, 0% 0%, 100% 0%, 33% 0%, 67% 0%,  51% 100% ,33% 100%, 70% 100%, 0% 50%, 100% 50%;
+    background-size: max(15rem, 30%), max(15rem, 30%), max(15rem, 25%), max(15rem, 25%), max(15rem, 25%), max(15rem, 27%), max(15rem, 13%), max(15rem, 20%), max(15rem, 20%), max(25rem, 25%), max(25rem, 22%);
 }
 
 #outer {
@@ -43,7 +40,10 @@ body {
     justify-content: center;
     background: var(--blue);
     padding: 1em;
-    margin: 0;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
     border-radius: 10px;
 }
 
