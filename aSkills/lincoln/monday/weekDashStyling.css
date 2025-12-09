@@ -174,3 +174,20 @@ body {
     text-decoration: none;
     color: black;
 }
+
+
+@media (max-width: 1000px){
+    #weekAgenda {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #outer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    :root {
+        --textSize: 1.25rem;
+    }
+}
