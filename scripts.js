@@ -29,16 +29,15 @@ document.addEventListener("DOMContentLoaded", function() {
 function searchClass() {
 
     searchClassButton.addEventListener("click", () => {
-        const inputValue = userInput.value;
-        
-        // Convert it to all lower or caps?
+        const inputValue = userInput.value.toUpperCase();
+
         let codeArray = inputValue.split("");
         let found;
         let locationOfClass;
         let dayOfClass;
         let typeOfClass;
         if (codeArray.length >= 5){
-            if (codeArray[0] == 'a'){
+            if (codeArray[0] == 'A'){
                 try {
                     locationOfClass = aSkillsClasses.get(codeArray[1])
                     dayOfClass = locationOfClass.get(codeArray[2]);
