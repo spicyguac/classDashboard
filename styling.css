@@ -24,7 +24,7 @@ body {
     justify-content: center;
     /* Maybe fill background or sides with pictures of me in classes */
     background: white;
-    /* min-height: 35vh; */
+    min-height: 100vh;
 }
 
 body {

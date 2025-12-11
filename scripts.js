@@ -45,7 +45,7 @@ function searchClass() {
                     //console.log(typeof codeArray[3]);
                     window.location.href = typeOfClass;
                 } catch (error) {
-                    console.log(error)
+                    console.log(error);
                 }
                 
             }else{
@@ -56,7 +56,7 @@ function searchClass() {
         if (found = 0){
             
         }
-        searchClass()
+        searchClass();
 
 
         //console.log(c);
